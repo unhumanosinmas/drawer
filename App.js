@@ -7,24 +7,18 @@
  */
 import React from 'react';
 
-import {
-  SafeAreaView,
-  ScrollView,
-  Text,
-  View,
-} from 'react-native';
+import { DrawerNavigation } from './src/navigation/DrawerNavigation';
+import { NavigationContainer } from '@react-navigation/native';
 
 
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <ScrollView>
-        <View>
-          <Text>Hola Mundo</Text>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    <NavigationContainer>
+
+      <DrawerNavigation/>
+
+    </NavigationContainer>
   );
 };
 
